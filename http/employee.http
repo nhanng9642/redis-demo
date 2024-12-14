@@ -1,0 +1,23 @@
+### Get all employees - page 0
+GET localhost:8080/employees
+
+### Get employee
+GET localhost:8080/employees/10003
+
+### Update empoloyee
+PUT localhost:8080/employees/10003
+Content-Type: application/json
+
+{
+  "firstName": "Nhan",
+  "lastName": "Nguyen",
+  "birthDate": "2000-01-01",
+  "gender": "M",
+  "hireDate": "2015-01-01"
+}
+
+### Delete employee
+DELETE localhost:8080/employees/10003
+
+### Get top 10 salary
+GET http://localhost:8080/employees/top-salary
